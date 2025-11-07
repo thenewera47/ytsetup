@@ -1,0 +1,119 @@
+:root {
+  --bg: #0b0f14;
+  --fg: #e9f0f5;
+  --card: #12171d;
+  --accent: #e63946;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: #10151b;
+  border-bottom: 2px solid #222;
+}
+
+header h1 {
+  color: var(--accent);
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+header p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.controls {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls label {
+  color: #b0c4de;
+  font-size: 0.9rem;
+}
+
+.controls input {
+  width: 70px;
+  margin-left: 0.3rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #334;
+  background: #0b1118;
+  color: #fff;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+button:hover { opacity: 0.9; }
+
+.player {
+  display: grid;
+  place-items: center;
+  min-height: 360px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  position: relative;
+  padding-top: 56.25%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.wrapper iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #9ca3af;
+  padding: 1rem;
+  background: #0f141a;
+  border-top: 1px solid #222;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}

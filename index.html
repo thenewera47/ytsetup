@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>24x7 Drive Video Player | Theyt Setup</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="24x7 Google Drive video rotation player hosted on Netlify. Auto-loop and responsive design.">
+</head>
+<body>
+<header>
+  <h1>TheyT Setup — 24x7 Drive Video Player</h1>
+  <p>Streaming public Google Drive videos continuously.</p>
+</header>
+
+<main class="container">
+  <section class="controls">
+    <label>Rotation interval (minutes):
+      <input type="number" id="interval" value="5" min="1" />
+    </label>
+    <button id="startBtn">Start Rotation</button>
+    <button id="muteBtn">Mute / Unmute</button>
+  </section>
+
+  <section id="videoArea" class="player">
+    <div class="wrapper">
+      <iframe id="driveFrame" src="" allow="autoplay" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>📽️ Hosted on <a href="https://theytsetup.netlify.app/" target="_blank">theytsetup.netlify.app</a></p>
+  <p>⚠️ Videos must be public and use the <code>/preview</code> link format. Refresh if video doesn’t load.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
